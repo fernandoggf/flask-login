@@ -1,0 +1,8 @@
+{% extends './base.html' %}
+
+{% block title %}Bienvenido{% endblock %}
+
+{% block body %}
+<h1>Bien!, {{ current_user.entreprise }}</h1>
+<a class="btn btn_secondary" href="{{ url_for('logout') }}">Log out</a>
+{% endblock %}
